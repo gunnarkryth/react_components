@@ -1,0 +1,21 @@
+.Card {
+  position: relative;
+  box-shadow: 0 0 1rem black;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 6.4cm;
+  height: 8.9cm;
+}
+
+.CardHeader {
+  position: absolute;
+  top: 0;
+}
+.CardBody {
+  position: absolute;
+  
+}
+.CardFooter {
+  position: absolute;
+  bottom: 0;
+}
