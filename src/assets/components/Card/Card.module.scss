@@ -1,21 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Gilda+Display&display=swap");
+
+$card_background: #fff3c1;
+$card_background_shadow: #d5c7a4;
+$card_body: #00000050;
+.CardContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2.5rem 0;
+}
+
+* {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Crimson Text", serif;
+}
+
 .Card {
   position: relative;
   box-shadow: 0 0 1rem black;
   border-radius: 1rem;
-  padding: 1rem;
+  background: radial-gradient($card_background, $card_background_shadow);
+  // background: url("src/assets/images/cards/green_background.png");
+  background-size: cover;
+  // padding: 1rem;
   width: 6.4cm;
   height: 8.9cm;
 }
 
 .CardHeader {
-  position: absolute;
   top: 0;
+  // position: absolute;
+  padding: 0.5rem;
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.CardImage {
+  // border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
 }
 .CardBody {
   position: absolute;
-  
+  width: 100%;
+  height: 30%;
+  article {
+    margin: 1rem;
+    background-color: $card_body;
+    height: 70%;
+  }
 }
 .CardFooter {
   position: absolute;
-  bottom: 0;
+  right: 1rem;
+  bottom: 1rem;
 }
